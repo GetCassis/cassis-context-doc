@@ -27,16 +27,17 @@ In a checkout bound to a project (`cassis/project.yml`, `--project`, or `CASSIS_
 
 Domains changed format in cassis-cli 1.1.0. Each one is the `README.md` of a directory under `cassis/domains/`, with YAML frontmatter for the structured fields and the domain's prose in the body. Tables, joins and metrics stay YAML.
 
-Cassis still reads the old `_project.yml` and `_domain.yml` files, so an un-migrated repository keeps working. `cassis ontology fmt` converts it and removes them. See [file format → Domains](https://docs.getcassis.com/file-format/#domains).
+Cassis still reads the old `_project.yml` and `_domain.yml` files, so an un-migrated repository keeps working. `cassis ontology fmt` converts it and removes them. See [ontology schema: domains](https://docs.getcassis.com/reference/schema/domains/).
 
 ## Documentation
 
 | Topic | Where |
 |---|---|
-| The file format, field by field | [docs.getcassis.com/file-format](https://docs.getcassis.com/file-format/) |
-| Keeping the ontology in git: the sync model, connecting a repo, the pull request loop, troubleshooting | [docs.getcassis.com/git](https://docs.getcassis.com/git/) |
-| The CLI, including copy-paste CI recipes for GitHub Actions and GitLab CI | [docs.getcassis.com/cli](https://docs.getcassis.com/cli/) |
-| Letting AI agents curate the ontology | [docs.getcassis.com/agents](https://docs.getcassis.com/agents/) |
+| The file format, field by field | [docs.getcassis.com/reference/schema](https://docs.getcassis.com/reference/schema/) |
+| Keeping the ontology in Git: connecting a repo and the pull request loop | [docs.getcassis.com/build/git-workflow](https://docs.getcassis.com/build/git-workflow/) |
+| The CLI command reference | [docs.getcassis.com/reference/cli](https://docs.getcassis.com/reference/cli/) |
+| Copy-paste CI recipes for GitHub Actions and GitLab CI | [docs.getcassis.com/build/ci](https://docs.getcassis.com/build/ci/) |
+| Letting analytics agents curate the ontology | [docs.getcassis.com/curate/agent](https://docs.getcassis.com/curate/agent/) |
 | How to write an ontology that makes the agent accurate | `cassis/AGENTS.md`, in both examples and in your own checkout |
 
 The `docs/` directory here is kept as stubs pointing at the pages above, so older links still lead somewhere.
